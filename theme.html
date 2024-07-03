@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Longboarding | My Hobby</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(151, 213, 255) 11.2%,
+          rgb(255, 155, 185) 91.1%
+        );
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        background-color: plum;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+
+      a {
+        display: block;
+        text-align: center;
+        color: #03045e;
+      }
+
+      footer {
+        text-align: center;
+        margin: 15px 0;
+        font-size: 18px;
+      }
+      .theme-button {
+        font-size: 15px;
+        background-color: #222;
+        color: #fff;
+        padding: 8px;
+      }
+      .theme-button:hover {
+        color: #222;
+        background: #fff;
+      }
+
+      .longboard-intro-img {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .longboard-intro-img:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+      }
+
+      .grid img {
+        width: 100%;
+        border-radius: 5px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .grid img:hover {
+        transform: scale(1.8);
+      }
+
+      .dark {
+        background: linear-gradient(
+          109.6deg,
+          rgb(0, 0, 0) 11.2%,
+          rgb(11, 132, 145) 91.1%
+        );
+        color: white;
+      }
+
+      .dark .container {
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      .dark a {
+        color: #fc8eac;
+      }
+
+      .dark button {
+        background: #fff;
+        color: #222;
+        transition: all 150ms ease-in-out;
+      }
+      .dark button:hover {
+        background: #222;
+        color: #fff;
+        border: 1px solid #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>Longboarding</h1>
+      <h2>My Favorite Activity</h2>
+      <a
+        href="https://magnetoboards.com/pages/beginners-guide-to-longboarding"
+        target="_blank"
+      >
+        <img
+          src="https://images.pexels.com/photos/5225146/pexels-photo-5225146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="A couple where girl is longboarding"
+          class="longboard-intro-img"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://images.pexels.com/photos/8482178/pexels-photo-8482178.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Girl holding longboard and boy riding longboard on road"
+        />
+        <img
+          src="https://images.pexels.com/photos/5026411/pexels-photo-5026411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Girl holding longboard on street"
+        />
+        <img
+          src="https://images.pexels.com/photos/5029051/pexels-photo-5029051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Man doing tricks on longboard"
+        />
+        <img
+          src="https://images.pexels.com/photos/5026424/pexels-photo-5026424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Two girls Longboarding"
+        />
+      </div>
+      <p>
+        Longboarding is a popular activity involving riding a long, sturdy
+        skateboard designed for smooth cruising, downhill racing, or performing
+        tricks. It differs from traditional skateboarding with its longer deck,
+        larger wheels, and more stable ride. Enthusiasts enjoy the thrill of
+        navigating various terrains, from city streets to coastal paths.
+        Longboarding combines elements of surfing, snowboarding, and
+        skateboarding, offering a versatile and exhilarating experience.
+      </p>
+      <a href="https://www.youtube.com/watch?v=mkQqWYaUEHs"
+        >Learn to Longboard Video</a
+      >
+    </div>
+    <footer>Coded by Sarah | For educational purposes</footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
